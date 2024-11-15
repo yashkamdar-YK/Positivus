@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "/whiteIcon.svg";
 import linkedinIcon from "../assets/Icon/linkedIn.svg"
-import facebookIcon from "../assets/Icon/facebook.svg"
+import facebookIcon from "../assets/Icon/Facebook.svg"
 import x from "../assets/Icon/X.svg"
 const Footer = () => {
   return (
