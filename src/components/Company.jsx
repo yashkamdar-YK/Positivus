@@ -1,13 +1,19 @@
-import React from 'react';
-
+import React from "react";
+import amazon from '../assets/logos/amazon.svg'
+import Dribble from '../assets/logos/Dribble.svg'
+import Hubspot from '../assets/logos/Hubspot.svg'
+import Netflix from '../assets/logos/Netflix.svg'
+import Notion from '../assets/logos/Notion.svg'
+import Zoom from '../assets/logos/Zoom.svg'
 const Company = () => {
   const logos = [
-    "/public/logos/amazon.svg",
-    "/public/logos/Dribble.svg", 
-    "/public/logos/Hubspot.svg",
-    "/public/logos/Netflix.svg",
-    "/public/logos/Notion.svg",
-    "/public/logos/Zoom.svg"
+
+    amazon,
+    Dribble,
+    Hubspot,
+    Netflix,
+    Notion,
+    Zoom,
   ];
 
   return (
@@ -26,7 +32,11 @@ const Company = () => {
           <div className="flex gap-12 animate-scroll px-8">
             {[...logos.slice(0, 3), ...logos.slice(0, 3)].map((logo, index) => (
               <div key={index} className="min-w-[33.33%] flex justify-center">
-                <img src={logo} alt="" className="h-12 object-contain lg:filter lg:grayscale" />
+                <img
+                  src={logo}
+                  alt=""
+                  className="h-12 object-contain lg:filter lg:grayscale"
+                />
               </div>
             ))}
           </div>

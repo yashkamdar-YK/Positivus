@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "/whiteIcon.svg";
-
+import linkedinIcon from "../assets/Icon/linkedIn.svg"
+import facebookIcon from "../assets/Icon/facebook.svg"
+import x from "../assets/Icon/X.svg"
 const Footer = () => {
   return (
     <footer className="relative bg-gray-800">
@@ -23,9 +25,9 @@ const Footer = () => {
               </div>
               
               <div className="hidden md:flex justify-center md:justify-start space-x-5">
-                <img src="/public/Icon/linkedIn.svg" alt="" />
-                <img src="/public/Icon/Facebook.svg" alt="" />
-                <img src="/public/Icon/X.svg" alt="" />
+                <img src={linkedinIcon} alt="LinkedIn" />
+                <img src={facebookIcon} alt="Facebook" />
+                <img src={x} alt="X" />
               </div>
             </div>
 
