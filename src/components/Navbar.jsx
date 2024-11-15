@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "/Vector.svg";
 import Hamburger from "/Burger menu icon.svg";
-import { X } from 'lucide-react';
+import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -22,9 +22,9 @@ const Navbar = () => {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6" />
+            <RxCross2 className="w-8 h-6" />
           ) : ( 
-            <img src={Hamburger} className="w-6 h-4" alt="Open" />
+            <img src={Hamburger} className="w-8 h-6" alt="Open" />
           )}
         </button> 
 
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu - slides down when hamburger is clicked */}
+      {/* Mobile menu */}
       <div
         className={`
         lg:hidden 
@@ -69,7 +69,7 @@ const Navbar = () => {
         }
       `}
       >
-        <div className="flex flex-col space-y-4 p-4">
+        <div className="flex flex-col items-center justify-center space-y-5 p-4">
           <a href="#home" className="hover:text-primary">
             About us
           </a>

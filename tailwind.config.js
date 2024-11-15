@@ -6,6 +6,20 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'scroll': 'scroll 20s linear infinite',
+        'scroll-reverse': 'scroll-reverse 20s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
+        },
+        'scroll-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' }
+        }
+      },
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif'],
       },
@@ -14,6 +28,7 @@ export default {
         secondary: '#191A23',
         tertiary: '#F3F3F3',
       },
+
     },
   },
   plugins: [],
