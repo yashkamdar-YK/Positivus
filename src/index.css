@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #B9FF66;
+  --secondary-color: #191A23;
+  --tertiary-color: #F3F3F3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply font-spaceGrotesk;
+  background-color: var(#ffffff);
+  color: var(--secondary-color);
+}
+
+
+
+/* Swiper styles */
+.testimonial-swiper {
+  padding: 0 20px !important;
+}
+
+.testimonial-swiper .swiper-slide {
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.testimonial-swiper .swiper-slide-active {
+  opacity: 1;
+}
+
+.testimonial-swiper .swiper-slide-active .swiper-slide-content {
+  transform: scale(1);
+}
+
+/* Custom pagination styles */
+.custom-pagination {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #4D4D4D;
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+
+/* Remove default Swiper button styles */
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  display: none;
+}
+
+/* Make side slides visible */
+.testimonial-swiper .swiper-wrapper {
+  align-items: center;
+  padding: 20px 0;
+}
