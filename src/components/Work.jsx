@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import plusIcon from "../assets/Icon/plus.svg"
+import minusIcon from "../assets/Icon/min.svg"
 const Work = () => {
   const [openSection, setOpenSection] = useState(null);
 
@@ -83,8 +84,8 @@ const Work = () => {
                     <img
                       src={
                         openSection === index
-                          ? "/public/Icon/min.svg"
-                          : "/public/Icon/plus.svg"
+                          ? minusIcon
+                          : plusIcon
                       }
                       className={
                         openSection === index
